@@ -3,21 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao HTML</title>
 </head>
 <body>
 
-    <style>
-
-        dt{
-            height: 2rem;
-        }
-
-        dd{
-            height: 4rem;
-        }
-    </style>
     <h1>HTML</h1>
 
     <p>HTML - <em>Hyper text Markup Language</em> em português é <em>Marcação de Hyper Texto</em>. Esse documento é formado por  meio de <strong>TAGS</strong> que permite outros computadores compreenderem.</p>
@@ -71,5 +62,95 @@
             Aqui entra o conteúdo da página, a maior prate do site e que vai aparecer na tela.
         </dd>
     </dl>
+
+    <h2>Heading tags</h2>
+
+    <p>heading tags podem ser traduzidas para "tags de cabeçalho" e seguem uma escala de 1 a 6, ou seja <code>h1</code> a <code>h6</code>, com o intuíto de estabelecer uma ordem hierárquica das informações. Elas idicam a que techos de conteúdo devem ser vinculados o título, subtítulo e tópicos de destaque da página.</p>
+
+    <h1>Mais importante</h1>
+    <h2>2º mais importante</h2>
+    <h3>3º mais importante</h3>
+    <h4>4º mais importante</h4>
+    <h5>5º mais importante</h5>
+    <h6>6º mais importante</h6>
+
+    <h2>Parágrafos/Paragraph</h2>
+
+    <p>Para descrever nosso conteúdo escrito:</p>
+
+    <img class="P" src="imagens/P.png" alt="Explicando as tags">
+
+    <h2>Listas</h2>
+
+    <p>
+        Para exibir listas em documentos,  temos 3 tipos de opções, uma para listas ordenadas <code>&lt;ol&gt;</code>(ordered list), outra para listas não ordenadas <code>&lt;ul&gt;</code>(unordered list) e outra para termos e definições <code>&lt;dl&gt;</code>(definition list).
+    </p>
+
+    <div>
+        <pre>
+            &lt;ol&gt;
+               &lt;li&gt; item 1 &lt;/li&gt;
+               &lt;li&gt; item 2 &lt;/li&gt;
+               &lt;li&gt; item 3 &lt;/li&gt;
+               &lt;li&gt; item 4 &lt;/li&gt;
+            &lt;/ol&gt;
+        </pre>
+           <ol>
+               <li>item 1</li>
+               <li>item 2</li>
+               <li>item 3</li>
+               <li>item 4</li>
+           </ol>
+    </div>
+
+    <div>
+        <pre>
+            &lt;ul&gt;
+                 &lt;li&gt; item 1 &lt;/li&gt;
+                 &lt;li&gt; item 2 &lt;/li&gt;
+                 &lt;li&gt; item 3 &lt;/li&gt;
+                 &lt;li&gt; item 4 &lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+    </div>
+
+    <div>
+        <pre>
+            &lt;dl&gt;
+                &lt;dt&gt;HTML&lt;/dt&gt;
+                &lt;dd&gt;Linguagem de marcação utilizada para criar o conteúdo de sites.&lt;/dd&gt;
+                &lt;dt&gt;CSS&lt;/dt&gt;
+                &lt;dd&gt;linguagem de marcação para especificação de estilos em sites.&lt;/dd&gt;
+                &lt;dt&gt;JavaScript&lt;/dt&gt;
+                &lt;dd&gt;Linguagem de programação para criar interatividades em sites.&lt;/dd&gt;
+            &lt;/dl&gt;
+        </pre>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+                <dt>CSS</dt>
+                <dd>linguagem de marcação para especificação de estilos em sites.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para criar interatividades em sites.</dd>
+            </dl>
+     </div>
+
+     <h2>Imagens</h2>
+
+     <p>
+        Também podemos fazer uso de medias em nossos documentos, as imagens são um ótimo meio de expressar uma ideia. Colocamos elas no documento HTML.
+    </p>
+
+    <figure>
+        <img src="imagens/dragon-1.png" alt="Logo E-sport de um Dragão">
+        <figcaption></figcaption>
+    </figure>
+
 </body>
 </html>

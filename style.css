@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dt{
+    height: 2rem;
+}
+
+dd{
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+h1{
+    height: 4rem;
+    padding-top: 1rem;
+}
+
+h2{
+    height: 4rem;
+    padding-top: 1rem;
+}
+
+.P{
+    width: 20rem;
+}
+
+div{
+    height: 15rem;
+    padding-top: 1rem;
+}
+
+ol{
+    margin-left: 8rem;
+}
+
+ul{
+    margin-left: 8rem;
+}
+
+dl{
+    margin-left: 8rem;
+}
