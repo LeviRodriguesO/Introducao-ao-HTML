@@ -4,23 +4,40 @@
     box-sizing: border-box;
 }
 
-dt{
+.Estrutura{
+    
+}
+
+.term{
     height: 2rem;
 }
 
+.desc{
+    height: 3rem;
+}
+
+dt{
+
+}
+
+dl{
+    padding-left: 4rem;
+}
+
 dd{
-    height: 4rem;
     margin-left: 2rem;
 }
 
 h1{
-    height: 4rem;
     padding-top: 1rem;
 }
 
 h2{
-    height: 4rem;
     padding-top: 1rem;
+}
+
+p{
+
 }
 
 .P{
@@ -28,7 +45,6 @@ h2{
 }
 
 div{
-    height: 15rem;
     padding-top: 1rem;
 }
 
@@ -39,7 +55,14 @@ ol{
 ul{
     margin-left: 8rem;
 }
+.Dragon{
+    height: 30vw;
+}
 
-dl{
-    margin-left: 8rem;
+.list{
+    margin-top: 2rem;
+}
+
+.iframe{
+    margin-left: 10rem;
 }

@@ -13,55 +13,61 @@
 
     <p>HTML - <em>Hyper text Markup Language</em> em português é <em>Marcação de Hyper Texto</em>. Esse documento é formado por  meio de <strong>TAGS</strong> que permite outros computadores compreenderem.</p>
 
+    <hr>
+
     <h2>O que é uma TAG?</h2>
 
-    <p>Elas marcão o começo e fim de um conteúdo específico no documento. Ela tem a responsabilidade de marcar a estrutura de uma página web.</p>
+    <p>Elas marcam o começo e fim de um conteúdo específico no documento. Ela tem a responsabilidade de marcar a estrutura de uma página web.</p>
 
     <p>As Tags possuem <code>&lt;abertura&gt; conteúdo &lt;/fechamento&gt;</code>. OBS: Nem todas as tags necessitam de fechamento.</p>
 
+    <hr>
+
     <h2>Estrutura básica de um HTML</h2>
 
-    <dl>
-        <dt>
+    <dl class="Estrutura">
+        <dt class="term">
             <code>&lt;!DOCTYPE html&gt;</code>
         </dt>
-        <dd>
+        <dd class="desc">
             Informa ao navegador que é um documento HTML.
         </dd>
 
-        <dt>
+        <dt class="term">
             <code>&lt;html! lang="en"&gt; &lt;/html&gt;</code>
         </dt>
-        <dd>
+        <dd class="desc">
             a tag html engloba todo o documento  e define o idioma através do parâmentro <code>lang</code>.
         </dd>
 
-        <dt>
+        <dt class="term">
             <code>&lt;head&gt; &lt;/head&gt;</code>
         </dt>
-        <dd>
+        <dd class="desc">
             como o próprio nome diz é a cabeça da página, local onde são feitas algumas configurações iniciais como formatos, estilos, palavras chaves.
         </dd>
 
-        <dt>
+        <dt class="term">
             <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
         </dt>
-        <dd>Ela fica inserida na tag head e usada para definir o tamanho que vai ocupar na tela com uma escala de 1:1.</dd>
+        <dd class="desc">Ela fica inserida na tag head e usada para definir o tamanho que vai ocupar na tela com uma escala de 1:1.</dd>
 
-        <dt>
+        <dt class="term">
             <code>&lt;title&gt;Document&lt;/title&gt;</code>
         </dt>
-        <dd>
+        <dd class="desc">
             Inserida na tag <em>head</em> e define o título do documento que é exibido na aba do navegador.
         </dd>
 
-        <dt>
+        <dt class="term">
             <code>&lt;body&gt; &lt;/body&gt;</code>
         </dt>
-        <dd>
-            Aqui entra o conteúdo da página, a maior prate do site e que vai aparecer na tela.
+        <dd class="desc">
+            Aqui entra o conteúdo da página, a maior parte do site que vai aparecer na tela.
         </dd>
     </dl>
+
+    <hr>
 
     <h2>Heading tags</h2>
 
@@ -74,11 +80,15 @@
     <h5>5º mais importante</h5>
     <h6>6º mais importante</h6>
 
+    <hr>
+
     <h2>Parágrafos/Paragraph</h2>
 
     <p>Para descrever nosso conteúdo escrito:</p>
 
     <img class="P" src="imagens/P.png" alt="Explicando as tags">
+
+    <hr>
 
     <h2>Listas</h2>
 
@@ -141,6 +151,8 @@
             </dl>
      </div>
 
+     <hr>
+
      <h2>Imagens</h2>
 
      <p>
@@ -148,9 +160,85 @@
     </p>
 
     <figure>
-        <img src="imagens/dragon-1.png" alt="Logo E-sport de um Dragão">
+        <img class="Dragon" src="imagens/dragon-1.png" alt="Logo E-sport de um Dragão">
         <figcaption></figcaption>
     </figure>
+    
+    <hr>
 
+    <h2>Links</h2>
+
+    <p> Uma das tags mais importantes da web, graças a ela podemos associar sites a outros.</p>
+
+    <dl>
+        <dt>_blank</dt>
+        <dd>Vai abrir o link em uma janela branca.</dd>
+
+        <dt>_self</dt>
+        <dd>Vai o abrir o link na janela atual(padrão).</dd>
+
+        <dt>_top</dt>
+        <dd>Vai desfazer todos os frames e abrir o destino no navegador completo.</dd>
+
+        <dt>_parent</dt>
+        <dd>Similar ao top em uma referência à janela mãe.</dd>
+
+        <dt>nome-do-frame</dt>
+        <dd>Abrirá a página vinculada no <code>&lt;iframe&gt;</code></dd>
+    </dl>
+    
+    <pre class="list">
+        &lt;a href=&gt;<ins>"https://gustavoguanabara.github.io"</ins> target="_blank"&gt;
+
+            Abre outra aba para o site.
+        &lt;/a&gt;
+
+        &lt;a href=&gt;<ins>"https://gustavoguanabara.github.io"</ins> target="_self"&gt;
+
+            Continua navegando no site.
+        &lt;/a&gt;
+
+        &lt;a href=&gt;<ins>"https://gustavoguanabara.github.io"</ins> target="_top"&gt;
+
+            Exibe o link em todo o espaço do navegador.
+        &lt;/a&gt;
+
+        &lt;a href=&gt;<ins>"https://gustavoguanabara.github.io"</ins> target="_parent"&gt;
+
+            O site é exibido no FRAMESET.
+        &lt;/a&gt;
+
+        &lt;a href=&gt;<ins>"https://gustavoguanabara.github.io"</ins> target="NomeFrame"&gt;
+
+            Vai para o frame específico.
+        &lt;/a&gt;
+    </pre>
+
+    <hr>
+
+    <h2>iframe(Quadro embutido)</h2>
+
+    <p>Essa tag incorpora outro documento no documento HTML.</p>
+
+    <iframe src="https://www.google.com/" frameborder="0" width="60%"> </iframe>
+
+    <hr>
+
+    <h2>Iframe Vídeo</h2>
+    <ol type="1" class="iframe">
+        <li>Entre no youtube.</li>
+        <li>Selecione o vídeo que deseja.</li>
+        <li>Clique em compartilhar e incorporar.</li>
+        <li>copie o HTML e cole no seu código.</li>
+    </ol>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/7YmNvCy30FU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Iframe Map</h2>
+
+    <ol>
+        <li>Entre no google maps, pesquise o local que deseja e clique em compartilhar e em incorporar mapa.</li>
+        <li>Escolha o tamanho do seu mapa e clique em copiar HTML e cole no código.</li>
+    </ol>
 </body>
 </html>
